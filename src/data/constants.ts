@@ -302,7 +302,7 @@ export const EXPERIENCE: Experience[] = [
     company: "Vedam School of Technology",
     description: [
       "Specializing in Computer Vision, AI/ML models, and Full Stack Development.",
-      "Led the development of the Vedam Cultural Club website, increasing student engagement online.",
+      "Built the Vedam Cultural Club website during a college hackathon, increasing student engagement online.",
       "Mastering Data Structures and Algorithms with a focus on real-world system design.",
     ],
     skills: [
