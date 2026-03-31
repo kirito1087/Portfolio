@@ -302,8 +302,7 @@ export const EXPERIENCE: Experience[] = [
     company: "Vedam School of Technology",
     description: [
       "Specializing in Computer Vision, AI/ML models, and Full Stack Development.",
-      "Built the Vedam Cultural Club website during a college hackathon, increasing student engagement online.",
-      "Mastering Data Structures and Algorithms with a focus on real-world system design.",
+      "Learned and applied Java, Python, Data Structures & Algorithms (DSA), and robust Web Development practices.",
     ],
     skills: [
       SkillNames.JS,
