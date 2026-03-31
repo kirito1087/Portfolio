@@ -34,7 +34,18 @@ const ContactForm = () => {
         }),
       });
       const data = await res.json();
+      if (res.status === 400 && data.error) {
+        // Parse Zod error strings
+        let errMsg = data.error;
+        try {
+          const parsed = JSON.parse(errMsg);
+          if (Array.isArray(parsed)) errMsg = parsed.map(e => e.message).join("\n");
+        } catch(e) {}
+        throw new Error(errMsg);
+      }
       if (data.error) throw new Error(data.error);
+      if (data.resendError) throw new Error(data.resendError.message || JSON.stringify(data.resendError));
+      
       toast({
         title: "Thank you!",
         description: "I'll get back to you as soon as possible.",
@@ -49,10 +60,10 @@ const ContactForm = () => {
         router.push("/");
         clearTimeout(timer);
       }, 1000);
-    } catch (err) {
+    } catch (err: any) {
       toast({
-        title: "Error",
-        description: "Something went wrong! Please check the fields.",
+        title: "Error Sending Message",
+        description: err.message || "Something went wrong! Please check the fields.",
         className: cn(
           "top-0 w-full flex justify-center fixed md:max-w-7xl md:top-4 md:right-4"
         ),
