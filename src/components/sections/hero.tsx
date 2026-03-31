@@ -11,7 +11,7 @@ import {
 import { usePreloader } from "../preloader";
 import { BlurIn, BoxReveal } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
-import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
 import { config } from "@/data/config";
 
 import SectionWrapper from "../ui/section-wrapper";
@@ -34,15 +34,22 @@ const HeroSection = () => {
             <div className="flex flex-col">
               <div>
                 <BlurIn delay={0.7}>
-                  <p
-                    className={cn(
-                      "md:self-start mt-4 font-thin text-md text-slate-500 dark:text-zinc-400",
-                      "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
-                    )}
-                  >
-                    Hi, I am
-                    <br className="md:hidden" />
-                  </p>
+                  <div className="flex items-center gap-6 mt-4 mb-2">
+                    <img
+                      src="/assets/profile.jpg"
+                      alt={config.author}
+                      className="w-24 h-24 md:w-36 md:h-36 rounded-full object-cover border-2 border-slate-600/30 shadow-xl"
+                    />
+                    <p
+                      className={cn(
+                        "font-thin text-lg text-slate-500 dark:text-zinc-400 mt-6 md:mt-10",
+                        "cursor-default font-display sm:text-lg md:text-xl whitespace-nowrap bg-clip-text "
+                      )}
+                    >
+                      Hi, I am
+                      <br className="md:hidden" />
+                    </p>
+                  </div>
                 </BlurIn>
 
                 <BlurIn delay={1}>
@@ -82,10 +89,7 @@ const HeroSection = () => {
               </div>
               <div className="mt-8 flex flex-col gap-3 w-fit">
                 <Link
-                  href={
-                    "https://drive.google.com/file/d/1MTSsUA8V7Po2AsNXT8kZ5sLOpzC8l7qm/view?usp=sharing"
-                  }
-                  target="_blank"
+                  href="/resume"
                   className="flex-1"
                 >
                   <BoxReveal delay={2} width="100%" >
@@ -96,28 +100,21 @@ const HeroSection = () => {
                   </BoxReveal>
                 </Link>
                 <div className="md:self-start flex gap-3">
-                  <Tooltip delayDuration={300}>
-                    <TooltipTrigger asChild>
-                      <Link href={"#contact"}>
-                        <Button
-                          variant={"outline"}
-                          className="block w-full overflow-hidden"
-                        >
-                          Hire Me
-                        </Button>
-                      </Link>
-                    </TooltipTrigger>
-                    <TooltipContent side="bottom">
-                      <p>pls 🥹 🙏</p>
-                    </TooltipContent>
-                  </Tooltip>
+                  <Link href={"#contact"}>
+                    <Button
+                      variant={"outline"}
+                      className="block w-full overflow-hidden"
+                    >
+                      Hire Me
+                    </Button>
+                  </Link>
                   <div className="flex items-center h-full gap-2">
                     <Link
-                      href={config.social.twitter}
+                      href={`mailto:${config.email}`}
                       target="_blank"
                     >
                       <Button variant={"outline"}>
-                        <SiX size={24} />
+                        <SiGmail size={24} />
                       </Button>
                     </Link>
                     <Link
