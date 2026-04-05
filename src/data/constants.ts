@@ -27,6 +27,14 @@ export enum SkillNames {
   VERCEL = "vercel",
   JAVA = "java",
   PYTHON = "python",
+  ANGULAR = "angular",
+  DJANGO = "django",
+  MYSQL = "mysql",
+  RESTAPI = "restapi",
+  NETLIFY = "netlify",
+  TENSORFLOW = "tensorflow",
+  MEDIAPIPE = "mediapipe",
+  WEBRTC = "webrtc",
 }
 export type Skill = {
   id: number;
@@ -260,6 +268,70 @@ using use = useUsing("use")`,
     color: "#3776AB",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
+  [SkillNames.ANGULAR]: {
+    id: 28,
+    name: "angular",
+    label: "Angular",
+    shortDescription: "Platform for building mobile and desktop web applications.",
+    color: "#DD0031",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+  },
+  [SkillNames.DJANGO]: {
+    id: 29,
+    name: "django",
+    label: "Django",
+    shortDescription: "High-level Python web framework that encourages rapid development.",
+    color: "#092E20",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+  },
+  [SkillNames.MYSQL]: {
+    id: 30,
+    name: "mysql",
+    label: "MySQL",
+    shortDescription: "Open-source relational database management system.",
+    color: "#4479A1",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+  [SkillNames.RESTAPI]: {
+    id: 31,
+    name: "restapi",
+    label: "REST APIs",
+    shortDescription: "Architectural style for designing networked applications.",
+    color: "#fff",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  [SkillNames.NETLIFY]: {
+    id: 32,
+    name: "netlify",
+    label: "Netlify",
+    shortDescription: "Platform for web developers to build and deploy websites.",
+    color: "#00C7B7",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg",
+  },
+  [SkillNames.TENSORFLOW]: {
+    id: 33,
+    name: "tensorflow",
+    label: "TensorFlow",
+    shortDescription: "Open-source platform for machine learning.",
+    color: "#FF6F00",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+  },
+  [SkillNames.MEDIAPIPE]: {
+    id: 34,
+    name: "mediapipe",
+    label: "MediaPipe",
+    shortDescription: "Cross-platform ML solutions for live and streaming media.",
+    color: "#009688",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  },
+  [SkillNames.WEBRTC]: {
+    id: 35,
+    name: "webrtc",
+    label: "WebRTC",
+    shortDescription: "Real-time communication for the web.",
+    color: "#333",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg",
+  },
 };
 
 export type Experience = {
@@ -281,9 +353,9 @@ export const EXPERIENCE: Experience[] = [
     company: "Self-directed",
     description: [
       "Built a browser-based Facial Emotion Recognition tool eliminating Python dependency issues.",
-      "Trained custom machine learning models to translate Sign Language using live hand land-marking.",
-      "Engineered WebRTC real-time video conferencing for high-quality peer-to-peer communication.",
-      "Focused on zero-install, immediately accessible web applications."
+      "Trained custom TensorFlow models and integrated MediaPipe hand-landmark detection to translate sign language in real time, delivering live text captions for deaf users.",
+      "Engineered a WebRTC video-conferencing system with Node.js signaling and Firebase Firestore for session management, providing low-latency peer-to-peer streams.",
+      "Prioritized zero-install, instantly accessible web applications by deploying front-end code on GitHub Pages and using CSS3 for responsive design, ensuring users can start without downloads."
     ],
     skills: [
       SkillNames.REACT,
@@ -292,6 +364,11 @@ export const EXPERIENCE: Experience[] = [
       SkillNames.JS,
       SkillNames.TS,
       SkillNames.TAILWIND,
+      SkillNames.TENSORFLOW,
+      SkillNames.MEDIAPIPE,
+      SkillNames.WEBRTC,
+      SkillNames.FIREBASE,
+      SkillNames.PYTHON,
     ],
   },
   {
@@ -312,7 +389,11 @@ export const EXPERIENCE: Experience[] = [
       SkillNames.GITHUB,
       SkillNames.JAVA,
       SkillNames.PYTHON,
-
+      SkillNames.REACT,
+      SkillNames.ANGULAR,
+      SkillNames.DJANGO,
+      SkillNames.MYSQL,
+      SkillNames.MONGODB,
     ],
   },
 ];

@@ -251,7 +251,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono">
-            A real-time, gesture-based neon drawing and 3D interaction app using pure JavaScript hand tracking in the browser.
+            A real-time, gesture-based neon drawing and 3D interaction platform running entirely in the browser using pure JavaScript hand tracking and Spline.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow images={[`${BASE_PATH}/nikunj/project-handtracker.png`]} />
@@ -275,7 +275,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono">
-             Real-time emotion detection entirely in the browser using face-api.js. Zero backend, zero installs required.
+            Real-time facial emotion detection entirely in the browser using face-api.js. Built with a zero-backend architecture for immediate web accessibility.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow images={[`${BASE_PATH}/nikunj/project-fer.png`]} />
@@ -299,7 +299,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono">
-            Live ASL recognition using Mediapipe hand tracking. Extracts landmarks to predict alphabet structures accurately.
+            Engineered a custom machine learning model integrating MediaPipe for live hand landmarking and ASL to text translation.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow images={[`${BASE_PATH}/nikunj/project-signlang.png`]} />
@@ -323,7 +323,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono">
-            High-quality peer-to-peer video conferencing application with screen sharing and integrated chat functionality.
+            Developed a real-time, low-latency video conferencing dynamic application powered by WebRTC and Socket.io.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow images={[`${BASE_PATH}/nikunj/project-videochat.png`]} />
@@ -347,7 +347,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono">
-            Official cultural club hub for Vedam School of Technology featuring events, galleries, and member management.
+            Built a comprehensive full-stack platform for the Vedam Cultural Club, substantially upgrading their digital footprint and event engagement.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <SlideShow images={[`${BASE_PATH}/nikunj/project-culturalclub.png`]} />
