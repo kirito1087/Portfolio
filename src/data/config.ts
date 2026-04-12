@@ -21,7 +21,7 @@ const config = {
   ],
   author: "Nikunj Sachdeva",
   email: "nikunj.sachdeva10@gmail.com",
-  site: "https://github.com/kirito1087",
+  site: "https://nikunj-portfolio10.netlify.app/",
 
   // for github stars button
   githubUsername: "kirito1087",

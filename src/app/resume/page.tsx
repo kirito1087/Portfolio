@@ -7,24 +7,22 @@ export default function ResumePage() {
   return (
     <div className="min-h-screen bg-neutral-100 py-10 px-4 print:py-0 print:px-0 print:bg-white flex justify-center">
       <div className="w-full max-w-[850px] bg-white text-black shadow-2xl print:shadow-none p-10 md:p-16 print:p-0">
-        <header className="border-b-2 border-slate-800 pb-4 mb-6 flex justify-between items-center sm:items-start">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider text-slate-800">{config.author}</h1>
-            <p className="text-lg text-slate-600 mt-2 font-medium">CS & AI Developer | Full-Stack Engineer</p>
-            <div className="flex flex-wrap gap-4 mt-4 text-sm font-semibold text-slate-700">
-              <a href={`mailto:${config.email}`} className="flex items-center gap-1 hover:text-blue-600">
-                {config.email}
-              </a>
-              <span className="text-slate-400">|</span>
-              <a href={config.social.linkedin} target="_blank" rel="noreferrer" className="hover:text-blue-600">LinkedIn</a>
-              <span className="text-slate-400">|</span>
-              <a href={config.social.github} target="_blank" rel="noreferrer" className="hover:text-blue-600">GitHub</a>
-              <span className="text-slate-400">|</span>
-              <a href={config.site} target="_blank" rel="noreferrer" className="hover:text-blue-600">Portfolio</a>
-            </div>
-          </div>
-          <div className="ml-4 shrink-0">
-            <img src="/assets/profile.jpg" alt={config.author} className="w-28 h-28 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-slate-200 shadow-xl print:shadow-none" />
+        <header className="border-b-2 border-slate-800 pb-4 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wider text-slate-800">{config.author}</h1>
+          <div className="flex flex-wrap gap-2 mt-4 text-sm font-semibold text-slate-700 items-center">
+            <span>Pune, Maharashtra, India</span>
+            <span className="text-slate-400">|</span>
+            <span>9871048032</span>
+            <span className="text-slate-400">|</span>
+            <a href={`mailto:${config.email}`} className="hover:text-blue-600">
+              {config.email}
+            </a>
+            <span className="text-slate-400">|</span>
+            <a href={config.social.linkedin} target="_blank" rel="noreferrer" className="hover:text-blue-600">LinkedIn</a>
+            <span className="text-slate-400">|</span>
+            <a href={config.social.github} target="_blank" rel="noreferrer" className="hover:text-blue-600">GitHub</a>
+            <span className="text-slate-400">|</span>
+            <a href={config.site} target="_blank" rel="noreferrer" className="hover:text-blue-600">Portfolio</a>
           </div>
         </header>
 
